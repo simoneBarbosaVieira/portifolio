@@ -1,0 +1,705 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat-Regular";
+}
+body,html{
+    height: 100%;
+    
+}
+@font-face{
+	src:url('../fonts/Montserrat-Regular.ttf');
+	font-family: "Montserrat-Regular";
+}
+/*estilo para o plugin slick*/
+.slick-dotted ul{
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+.slick-dotted button:focus{
+    outline: 0;
+}
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+li.slick-active button{
+    background: #688293;
+    color: #688293;
+}
+.slick-slide:focus{outline: none;}
+
+/*fim do estilo*/
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    width: 180px;
+}
+header{
+    padding: 20px 2%;
+}
+header .logo img{
+    width: 200px;
+    height: 70px;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+header nav.menu-desktop ul {
+    list-style-type: none;
+}
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 14px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+nav.menu-mobile{
+    float: right;
+    display: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-image: url(../imagens/menu-mobile.png);
+    background-size: 100% 100%;
+}
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    position: absolute;
+    background-color: white;
+}
+nav.menu-mobile ul li{
+    padding: 10px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+header ul a {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+.mosaico-single{
+    float: left;
+    width: calc(100%/6);
+}
+.img-mosaico-single1{
+    
+   padding-top: 100%;
+   background-image: url(../imagens/consultorio1.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single2 {
+    padding-top: 100%;
+   background-image: url(../imagens/consultorioroxo.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single3 img {
+ padding-top: 30%;
+ width: 100%;
+ height: 50%;
+}
+.img-mosaico-single4  {
+ 
+  margin-top: 35%;
+
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    
+}
+.img-mosaico-single4 img {
+    width: 100%;
+    height: 100%;
+  }
+
+.img-mosaico-single5 {
+    padding-top: 100%;
+   background-image: url(../imagens/profissional.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single6{
+    padding-top: 100%;
+   background-image: url(../imagens/atendentes.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single7{
+
+    margin-top: 20%;
+   background-size: 100% 80%;
+   
+    border: 5px solid white;
+}
+.img-mosaico-single7 img{
+   width: 100%;
+   height: 50%;
+   
+}
+.img-mosaico-single8{
+    padding-top: 100%;
+    margin-top: 21%;
+   background-image: url(../imagens/doutor.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single9{
+    padding-top: 100%;
+   background-image: url(../imagens/dentes.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single10{
+    
+    margin-top: 20%;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+.img-mosaico-single10 img{
+    width: 100%;
+}
+.img-mosaico-single11{
+   
+    margin-top: 15%;
+    border: 5px solid white;
+}
+.img-mosaico-single11 img{
+    width: 100%;
+ 
+}
+.img-mosaico-single12{
+    padding-top: 100%;
+    margin-top: 20%;
+   background-image: url(../imagens/aparelhos.jpeg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+    border: 5px solid white;
+}
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+section.servicos > .container .box-servico h2{
+    color:white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+section.servicos > .container .box-servico p{
+    color:white;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 13px;
+}
+section.servicos > .container .box-servico {
+   
+    background-image: url(../imagens/icone_dente.png);
+    background-size: 18px 18px;
+    background-position: center calc(100% - 2px);
+    background-repeat: no-repeat;
+}
+section.servicos > .container .box-servico:nth-of-type(1){
+    width: 40%;
+    padding: 49px 2%;
+    text-align: center;
+    
+    background-color: #808080;
+}
+section.servicos > .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 49px 2%;
+    text-align: center;
+    /*
+    background-color: #688293;
+    */
+    background-color: #545454;
+    background-image: none;
+}
+section.servicos > .container .box-servico:nth-of-type(3){
+    width: 40%;
+    padding: 49px 2%;
+    text-align: center;
+    /*
+    background-color:#576975;
+    */
+    background-color: #808080;
+}
+section.perfil-container{
+    padding: 40px 0;
+   
+   
+}
+section.perfil-container .container{
+    max-width: 600px;
+}
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+    
+    
+}
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+section.perfil-container .img-perfil{
+    width: 40%;
+    height: 100%;
+    
+    background-image: url(../imagens/simone.jpg);
+    background-size: 100% 100%;
+}
+section.perfil-container .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+   
+}
+section.perfil-container .texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+section.perfil-container .texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 20px;
+    text-align: justify;
+}
+section.videos{
+    padding: 5px 0;
+   
+}
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    position: relative;
+    border: 5px solid white;
+    padding-top: calc(33.3% * 0.6);
+}
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+section.tratamentos .tratamento-container{
+    
+    float: left;
+    width: 33.3%;
+}
+.tratamento-single{
+    padding: 20px;
+   
+}
+.tratamento-single h2{
+    font-size: 18px;
+    color:#737373;
+}
+.tratamentos > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+section.tratamentos > .container{
+    padding: 50px 0;
+    
+}
+.tratamento-single p{
+    font-size: 13px;
+    color: #b4b4b4;
+}
+section.depoimentos > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+   
+}
+section.depoimentos > .container{
+    padding: 50px 0;
+    text-align: center;
+    max-width: 400px;
+}
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+.depoimento-single quote{
+    font-size: 15px;
+    color:#b4b4b4;
+}
+
+
+.depoimento-single .nome-depoimento{
+    padding: 19px 0;
+    
+  
+}
+.nome-depoimento img{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: 20%;
+    left: 35%;
+    border-radius: 16px;
+    
+}
+.nome-depoimento span{
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+    color: #b4b4b4;
+    display: inline-block;
+    vertical-align: top;
+}
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #688293;
+}
+.instagram-chamada p{
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 23px;
+}
+.mosaico-social{
+    width: 100%;
+   
+    float: left;
+    
+}
+.img-mosaico-single-social{
+    width: calc(100%/4);
+    padding-top: calc(100%/4);
+    float: left;
+    border: 5px solid white;
+   
+    background-image: url(../imagens/antes.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(2){
+    background-image: url(../imagens/dente.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(3){
+    background-image: url(../imagens/dentesDepois.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(4){
+    background-image: url(../imagens/clareamento.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(5){
+    background-image: url(../imagens/juncaoDedentes.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(6){
+    background-image: url(../imagens/dentesFacetas.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(7){
+    background-image: url(../imagens/dentesAlinhados.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(8){
+    background-image: url(../imagens/espelho.jpg);
+    background-size: 100% 100%;
+}
+.img-mosaico-single-social:nth-of-type(9){
+    background-image: url(../imagens/facetas-de-porcelana.png);
+    background-size: 100% 100%;
+}
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #688293;
+}
+.facebook-chamada p{
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 23px;
+}
+section.contato{
+    padding: 60px 2%;
+}
+section.contato h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+section.contato form{
+    width: 100%;
+    margin: 15px 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.form-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+   
+}
+.form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    outline: 0;
+}
+.form-wraper textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    outline: 0;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+.form-wraper input[type=submit]{
+    width: 100px;
+    display: inline-block;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    background: #688293;
+    color: white;
+    cursor: pointer;
+}
+footer .container{
+    max-width: 900px;
+    
+}
+.footer-block h2{
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+.footer-block p{
+  margin-top: 10px;  
+ color: white;
+ font-size: 14px;
+
+}
+footer{
+    padding: 40px 2%;
+    background-color: #688293;
+}
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+}
+footer .insta{
+   width: 35px;
+   height: 35px;
+   position: relative;
+   top: -53px;
+   left: 85%;  
+   right: 10%;
+}
+footer .face{
+    width: 35px ;
+    height: 35px;
+    position: relative;
+    top:-90px ;
+    left: 89%;
+    
+}
+
+@media screen and (max-width: 1024px){
+
+    .img-mosaico-single-social{
+        width: calc(100%/6);
+        padding-top: calc(100%/6);
+    }
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px){
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer .footer-block{
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+       
+    }
+
+    footer .insta{
+        width: 35px;
+        height: 35px;
+        position: relative;
+        top: -95%;
+        left: 45%;  
+      
+    }
+    footer .face{
+        width: 35px ;
+        height: 35px;
+        position: relative;
+        top:-40px ;
+        left: 55%;
+        
+    }
+    
+    
+    nav.menu-desktop{
+         display: none;
+     }
+     nav.menu-mobile{
+
+         display: block;
+     }
+
+
+    section.servicos > .container{
+        flex-direction: column;
+    }
+    section.servicos > .container .box-servico:nth-of-type(1){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+        text-align: center;
+       
+    }
+    section.servicos > .container .box-servico:nth-of-type(2){
+        width: 94%;
+        max-width: 380px;
+        padding: 40px 2%;
+        text-align: center;
+        
+    }
+    section.servicos > .container .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+        text-align: center;
+       
+    }
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+    section.perfil-container .perfil-wraper2{
+        height: auto;
+        position: static;
+        text-align: center;
+        display: inline-block;
+    }
+    section.perfil-container .img-perfil{
+        width: 80%;
+        height: 40%;
+        padding-top: 100%;
+        display: inline-block;
+    }
+    section.perfil-container .texto-perfil{
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+        padding: 0 30px;
+    }
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        float: none;
+        width: 70%;
+        display: inline-block;
+        border: 5px solid white;
+        padding-top: calc(70% * 0.6);
+    }
+    section.videos iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .img-mosaico-single-social{
+        width: calc(100%/3);
+        padding-top: calc(100%/3);
+    }
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+}
+@media screen and (max-width: 580px){
+    section.perfil-container .img-perfil{
+        width: 80%;
+        padding-top: 110%;
+       
+    }
+    section.videos .box-video{ 
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+
+}
+
